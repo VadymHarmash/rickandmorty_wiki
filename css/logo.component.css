@@ -1,0 +1,15 @@
+.main__logo {
+  margin-top: 86px;
+}
+.main__logo img {
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .main__logo {
+    margin-top: 92px;
+  }
+  .main__logo img {
+    width: 312px;
+  }
+}

@@ -1,0 +1,23 @@
+.go-back-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 108px;
+    text-decoration: none;
+    color: #000000;
+    margin: 21px 0 0 50px;
+    h3 {
+        border: none;
+        background: none;
+        font-family: 'Karla';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 767px) {
+    .go-back-button{
+        margin: 27px 0 0 28px;
+    }
+}

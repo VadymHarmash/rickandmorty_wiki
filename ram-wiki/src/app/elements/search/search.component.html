@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="main__filter">
+        <input 
+            class="main__filter__search" 
+            id="search" 
+            type="text"
+            #searchInput
+            placeholder="Filter by name" 
+            (input)="searchCharacter(searchInput.value)"
+        >
+        <ul class="searched-characters" *ngIf="listToggle">
+            <li *ngFor="let character of charactersData">
+                <a [routerLink]="['/details',character.id]" class="charactersInSearch">
+                    {{character.name}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

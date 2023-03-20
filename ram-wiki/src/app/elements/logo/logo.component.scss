@@ -1,0 +1,18 @@
+.main__logo{
+    margin-top: 86px;
+    img{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        &__logo {
+            margin-top: 92px;
+            img{
+                width: 312px;
+            }
+        }
+    }
+}
+

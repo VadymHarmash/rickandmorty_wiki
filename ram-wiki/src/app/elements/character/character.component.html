@@ -1,0 +1,38 @@
+<app-catalog-button></app-catalog-button>
+<app-character-list
+    [charactersList]="characterData"
+></app-character-list>
+
+<div class="container">
+    <div class="character__wrapper">
+        <ul>
+            <li *ngFor="let character of characterData">
+                <img src="{{ character.image }}" alt="">
+                <h1>{{ character.name }}</h1>
+                <p>Informations</p>
+                <ul>
+                    <li>
+                        <h4>Gender</h4>
+                        <h5>{{ character.gender }}</h5>
+                    </li>
+                    <li>
+                        <h4>Status</h4>
+                        <h5>{{ character.status }}</h5>
+                    </li>
+                    <li>
+                        <h4>Specie</h4>
+                        <h5>{{ character.species }}</h5>
+                    </li>
+                    <li>
+                        <h4>Origin</h4>
+                        <h5>{{ character.origin.name }}</h5>
+                    </li>
+                    <li>
+                        <h4>Type</h4>
+                        <h5>{{ characterType }}</h5>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.main__filter {
+  margin: 16px 0 36px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__filter__search {
+  width: 1020px;
+  font-size: 16px;
+  padding: 16px 48px;
+  background-image: url("../../../assets/icons/filter.png");
+  background-repeat: no-repeat;
+  background-position: top 20px left 19px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .main__filter {
+    margin: 32px 0 12px;
+  }
+}
+@media (max-width: 576px) {
+  .main__filter {
+    margin: 32px auto 24px;
+  }
+  .main__filter input {
+    width: 312px;
+  }
+}
